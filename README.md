@@ -8,37 +8,21 @@ The application provides a graphical user interface (GUI) using Tkinter for encr
 - multiple files, or folders.
 
 **ENCRYPTION PROCESS**
-          Select Files or Folder
-                    ⬇
-              Enter Password
-                    ⬇
-  Generate encryption key using PBKDF2HMAC
-                    ⬇
-        Encrypt file using fernet
-                    ⬇
-      Save encrypted file as (.enc)
+Select Files or Folder -> Enter Password -> Generate encryption key using PBKDF2HMAC -> Encrypt file using fernet -> Save encrypted file as (.enc)
         
       
 **DECRYPTION PROCESS**
-         Select Encrypted (.enc) File
-                    ⬇
-          Enter Original Password
-                    ⬇
- Derive same encryption key using stored salt
-                    ⬇
-          Decrypt using fernet
-                    ⬇
-      Restore Original File Contents
+Select Encrypted (.enc) File -> Enter Original Password -> Derive same encryption key using stored salt -> Decrypt using fernet -> Restore Original File Contents
 
 
-**TECHNOLOGY**                    **PURPOSE**
-Python                        Main Programming Language
-Tkinter                       Graphical User Interface
-Cryptography                  File Encryption and Decryption
-Fernet                        Symmetrical Authenticated Encryption
-PBKDF2HMAC                    Derives an encryption key from a password
-SHA-256                       Hashing Algorithm used in key derivation
-Base64                        Converts derived key into Fernet Compatible format
+**TECHNOLOGY**
+Python -> Main Programming Language
+Tkinter -> Graphical User Interface
+Cryptography -> File Encryption and Decryption
+Fernet -> Symmetrical Authenticated Encryption
+PBKDF2HMAC -> Derives an encryption key from a password
+SHA-256 -> Hashing Algorithm used in key derivation
+Base64 -> Converts derived key into Fernet Compatible format
 
 
 
